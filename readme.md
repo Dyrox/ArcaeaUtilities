@@ -1,5 +1,9 @@
 # Arcaea Utilities
-Before you run anything, you have to make sure that the `rawData` folder is properly formatted. The `rawData` folder should contain the following sub-directories:
+![Arcaea Banner](https://shorturl.at/jV1sH)
+
+This is a set of utility tools made for modding the game [Arcaea](https://arcaea.lowiro.com/en) by lowiro. This repo will not ⚠️ contain any copyrighted ©️ materials, so you'd have to figure out yourself where to get the raw downloaded song data.
+
+Before you run anything, you must ensure the `rawData` folder is properly formatted. The `rawData` folder should contain the following sub-directories:
 ```
 rawData/
 ├── songs/
@@ -15,9 +19,9 @@ rawData/
 ```
 
 ## songFolderOrganizer.py
-`Arcaea` Stores its song and charts files in a really messy format but we can classify them into two categories of songs - ones that already come with the game itself, which are `Arcaea` songpack default songs. The other type is songs that are in the extension songpacks, such as `World Extend`, `MuseDash`, `Rotaeno`, etc. which needs to be downloaded from the Arcaea servers after signing in with an account that has purchased these packs.
+`Arcaea` Stores its song and charts files in a really messy format but we can classify them into two categories of songs - ones that already come with the game itself, which are `Arcaea` songpack default songs. The other type is songs that are in the extension songpacks, such as `World Extend`, `MuseDash`, `Rotaeno`, etc. which need to be downloaded from the Arcaea servers after signing in with an account that has purchased these packs.
 
-In the `songs` folder, even though the entire catalog of songs can be found, however, as mentioned, the second type of songs will not have their charts nor audio downloaded. Instead, they have a `dl_` prefix in front of their song folder name. The downloaded files exist in the `dl` folder, and the files does not have any valid file extensions, therefore we need to determine the file types by their filenames. 
+In the `songs` folder, even though the entire catalogue of songs can be found, however, as mentioned, the second type of songs will not have their charts or audio downloaded. Instead, they have a `dl_` prefix in front of their song folder name. The downloaded files exist in the `dl` folder, and the files do not have any valid file extensions, therefore we need to determine the file types by their filenames. 
 
 This script will organize the song folders in the `songs` folder by moving the downloaded files to the `song` folder and renaming them to their original name.
 
